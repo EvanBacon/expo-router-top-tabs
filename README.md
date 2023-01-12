@@ -17,14 +17,14 @@ Example in Layout Route:
 ```js
 // app/(tabs)/_layout.tsx
 
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import { TopTabs } from "@bacons/expo-router-top-tabs";
 
 export default function CustomLayout() {
   return (
-    <TopTabs>
+    <TopTabs screenOptions={{}}>
       <TopTabs.Header>
-        <View pointerEvents="none" style={{ ... }}>
+        <View pointerEvents="none" style={{}}>
           <Text>Header</Text>
         </View>
       </TopTabs.Header>
@@ -40,12 +40,12 @@ Usage in child routes:
 ```js
 // app/(tabs)/index.tsx
 
-import { Animated, StyleSheet, Text } from "react-native";
+import { Animated } from "react-native";
 import { useScrollProps } from "@bacons/expo-router-top-tabs";
 
 export default function Screen() {
   const props = useScrollProps();
 
-  return <Animated.ScrollView {...props}>// ...</Animated.ScrollView>;
+  return <Animated.ScrollView {...props}></Animated.ScrollView>;
 }
 ```

@@ -10,6 +10,8 @@ import {
   useCollapsibleScene,
 } from "react-native-collapsible-tab-view";
 
+import { MaterialTopTabNavigationOptions } from "@react-navigation/material-top-tabs";
+
 const Nav = createMaterialCollapsibleTopTabNavigator().Navigator;
 const TopTabsInternal = Nav;
 
@@ -75,6 +77,7 @@ export const TopTabs = ({
   ...props
 }: {
   children?: React.ReactNode;
+  screenOptions?: MaterialTopTabNavigationOptions;
   options?: Partial<CollapsibleTabViewProps<any>>;
 }) => {
   // Allows adding Screen components as children to configure routes.

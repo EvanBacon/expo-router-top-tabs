@@ -1,6 +1,6 @@
 {
   "name": "@bacons/expo-router-top-tabs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Top tabs with optional header in Expo Router",
   "main": "build/index.js",
   "scripts": {
