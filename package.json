@@ -1,6 +1,6 @@
 {
   "name": "@bacons/expo-router-top-tabs",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Top tabs with optional header in Expo Router",
   "main": "build/index.js",
   "scripts": {
@@ -36,7 +36,7 @@
     "react-native-tab-view": "^3.3.0"
   },
   "devDependencies": {
-    "expo-router": "~0.0.33",
+    "expo-router": "^1.5.3",
     "expo-module-scripts": "^2.0.0",
     "react-native": "0.68.2"
   }

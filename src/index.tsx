@@ -1,7 +1,10 @@
-import { useFilterScreenChildren } from "expo-router/build/layouts/withLayoutContext";
-import { useContextKey, useRouteNode } from "expo-router/build/Route";
-import { useSortedScreens } from "expo-router/build/useScreens";
-import { Screen } from "expo-router/build/views/Screen";
+const {
+  useFilterScreenChildren,
+} = require("expo-router/src/layouts/withLayoutContext");
+const { useContextKey, useRouteNode } = require("expo-router/src/Route");
+const { useSortedScreens } = require("expo-router/src/useScreens");
+
+import { Navigator } from "expo-router";
 import React, { useCallback, useState } from "react";
 import { View } from "react-native";
 import {
@@ -123,7 +126,7 @@ export const TopTabs = ({
   );
 };
 
-TopTabs.Screen = Screen;
+TopTabs.Screen = Navigator.Screen;
 
 function Header({ children }) {
   return children;
