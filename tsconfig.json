@@ -1,8 +1,6 @@
 {
   "extends": "expo-module-scripts/tsconfig.base",
   "compilerOptions": {
-    "target": "es2019",
-    "module": "commonjs",
     "outDir": "./build",
     "skipLibCheck": true
   },
