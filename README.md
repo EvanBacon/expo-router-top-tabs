@@ -8,7 +8,7 @@ Wraps `react-native-collapsible-tab-view` and adds support for [Expo Router](htt
 yarn add @bacons/expo-router-top-tabs react-native-reanimated
 ```
 
-- Setup Reanimated in the `babel.config.js`. See [here](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/installation#babel-plugin) for more info.
+- Setup Reanimated in the `babel.config.js`. See [here](https://docs.swmansion.com/react-native-reanimated/docs/reanimated-babel-plugin/plugin-options/) for more info.
 
 ## Usage
 
